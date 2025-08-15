@@ -1,0 +1,39 @@
+{
+  "name": "zentrack",
+  "version": "1.0.0",
+  "bin": "src/main.js",
+  "description": "Track your expenses with zentrack ",
+  "keywords": [
+    "cli"
+  ],
+  "homepage": "https://github.com/Blues24/Zentrack#readme",
+  "bugs": {
+    "url": "https://github.com/Blues24/Zentrack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blues24/Zentrack.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Blues24",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg . --target node18-linux-x64,node18-win-x64,node18-macos-x64 --output dist/Zentrack-1.0.0r01"
+  },
+  "pkg": {
+    "assets": [
+      "src/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.0",
+    "fs": "^0.0.1-security",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
