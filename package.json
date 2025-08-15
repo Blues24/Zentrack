@@ -1,6 +1,6 @@
 {
   "name": "zentrack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": "src/main.js",
   "description": "Track your expenses with zentrack ",
   "keywords": [
@@ -20,7 +20,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "pkg . --target node18-linux-x64,node18-win-x64,node18-macos-x64 --output dist/Zentrack-1.0.0r01"
+    "build": "rm -rf ./dist/* ; pkg . --target node18-linux-x64,node18-win-x64 --output dist/zentrack"
   },
   "pkg": {
     "assets": [

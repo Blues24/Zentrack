@@ -1,14 +1,14 @@
 #!/usr/bin/env node 
 const { Command } = require('commander');
 const Table = require('cli-table3');
-const expenses = require('./utils/query.js');
+const query = require('./utils/query.js');
 
 const program = new Command();
 
 program
   .name('expense-tracker')
   .description('A simple offline expense tracker')
-  .version('1.0.0');
+  .version('1.0.1');
 
 // init
 program
